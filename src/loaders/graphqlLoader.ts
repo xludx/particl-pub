@@ -15,7 +15,7 @@ export const graphqlLoader: MicroframeworkLoader = async (settings: Microframewo
         const schema = await buildSchema({
             resolvers: env.app.dirs.resolvers,
             // automatically create `schema.gql` file with schema definition in current folder
-            emitSchemaFile: path.resolve(__dirname, '../api', 'schema.gql'),
+            emitSchemaFile: path.resolve(__dirname, '../api', 'schema.gql')
         });
 
         handlingErrors(schema);
@@ -37,8 +37,8 @@ export const graphqlLoader: MicroframeworkLoader = async (settings: Microframewo
                 formatError: error => ({
                     code: getErrorCode(error.message),
                     message: getErrorMessage(error.message),
-                    path: error.path,
-                }),
+                    path: error.path
+                })
             })(request, response);
         });
 

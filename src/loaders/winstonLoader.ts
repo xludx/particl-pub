@@ -16,8 +16,8 @@ export const winstonLoader: MicroframeworkLoader = (settings: MicroframeworkSett
                     : format.combine(
                         format.colorize(),
                         format.simple()
-                    ),
-            }),
-        ],
+                    )
+            })
+        ]
     });
 };

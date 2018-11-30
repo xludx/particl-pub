@@ -7,7 +7,7 @@ export class AddUserRelationToPetTable1512663990063 implements MigrationInterfac
         columnNames: ['user_id'],
         referencedColumnNames: ['id'],
         referencedTableName: 'user',
-        onDelete: 'CASCADE',
+        onDelete: 'CASCADE'
     });
 
     public async up(queryRunner: QueryRunner): Promise<any> {

@@ -19,7 +19,7 @@ export class Pet {
 
     @Column({
         name: 'user_id',
-        nullable: true,
+        nullable: true
     })
     public userId: string;
 

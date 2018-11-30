@@ -3,7 +3,7 @@ import { Field, ID, Int, ObjectType } from 'type-graphql';
 import { User } from './User';
 
 @ObjectType({
-    description: 'Pet object.',
+    description: 'Pet object.'
 })
 export class Pet {
 
@@ -11,17 +11,17 @@ export class Pet {
     public id: string;
 
     @Field({
-        description: 'The name of the pet.',
+        description: 'The name of the pet.'
     })
     public name: string;
 
     @Field(type => Int, {
-        description: 'The age of the pet in years.',
+        description: 'The age of the pet in years.'
     })
     public age: number;
 
     @Field(type => User, {
-        nullable: true,
+        nullable: true
     })
     public owner: User;
 

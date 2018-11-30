@@ -11,26 +11,26 @@ export class CreatePetTable1512663524808 implements MigrationInterface {
                     type: 'varchar',
                     length: '255',
                     isPrimary: true,
-                    isNullable: false,
+                    isNullable: false
                 }, {
                     name: 'name',
                     type: 'varchar',
                     length: '255',
                     isPrimary: false,
-                    isNullable: false,
+                    isNullable: false
                 }, {
                     name: 'age',
                     type: 'int',
                     isPrimary: false,
-                    isNullable: false,
+                    isNullable: false
                 }, {
                     name: 'user_id',
                     type: 'varchar',
                     length: '255',
                     isPrimary: false,
-                    isNullable: true,
-                },
-            ],
+                    isNullable: true
+                }
+            ]
         });
         await queryRunner.createTable(table);
     }

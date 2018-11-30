@@ -14,6 +14,7 @@ import { publicLoader } from './loaders/publicLoader';
 import { swaggerLoader } from './loaders/swaggerLoader';
 import { typeormLoader } from './loaders/typeormLoader';
 import { winstonLoader } from './loaders/winstonLoader';
+import { scuttleButtLoader } from './loaders/scuttleButtLoader';
 
 /**
  * EXPRESS TYPESCRIPT BOILERPLATE
@@ -41,7 +42,8 @@ bootstrapMicroframework({
         homeLoader,
         publicLoader,
         graphqlLoader,
-    ],
+        scuttleButtLoader
+    ]
 })
     .then(() => banner(log))
     .catch(error => log.error('Application is crashed: ' + error));

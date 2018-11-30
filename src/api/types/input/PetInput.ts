@@ -9,7 +9,7 @@ export class PetInput implements Partial<Pet> {
     public name: string;
 
     @Field(type => Int, {
-        description: 'The age of the pet in years.',
+        description: 'The age of the pet in years.'
     })
     public age: number;
 
